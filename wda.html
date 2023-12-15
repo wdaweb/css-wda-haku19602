@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RWD</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+
+    body {
+      padding: 5%;
+    }
+
+    .card-main {
+      /* background-color: palegoldenrod; */
+      width: 90%;
+      /* margin: 5%; */
+      text-align: center;
+    }
+
+    .card {
+      /* background-color: palegoldenrod; */
+      width: 90%;
+      /* margin: 5%; */
+    }
+
+    img {
+      width: 50%;
+      display: block;
+      margin: auto;
+    }
+
+    .card-main h1 {
+      font-size: 1.8rem;
+      margin-bottom: 3%;
+    }
+
+    .card-main h2,
+    .card h2 {
+      font-size: 1.5rem;
+    }
+
+    .card-main h3 {
+      font-size: 1rem;
+    }
+
+    hr {
+      margin: 5% 0;
+    }
+
+    @media (min-width: 768px) {
+      .card-main {
+        /* background-color: paleturquoise; */
+        width: 20%;
+        position: absolute;
+        /*  */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .card-main img {
+        width: 55%;
+      }
+
+      .card-main h1 {
+        font-size: 2vw;
+        transition: 0s;
+      }
+
+      .card-main h2 {
+        font-size: 1.6vw;
+        transition: 0s;
+      }
+
+      .card-main h3 {
+        font-size: 1vw;
+        transition: 0s;
+      }
+
+
+      /* ---------- */
+      .card {
+        /* background-color: palegoldenrod; */
+        position: absolute;
+        width: 8%;
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+      }
+
+      .card h2 {
+        font-size: 1.6vw;
+        margin-top: 1vh;
+        transition: 0s;
+      }
+
+      p {
+        display: none;
+      }
+
+      /* 每個 card 個別定位 */
+      .card-html {
+        top: 18%;
+        left: 5%;
+      }
+
+      .card-css {
+        top: 5%;
+        left: 25%;
+      }
+
+      .card-js {
+        bottom: 28%;
+        left: 10%;
+      }
+
+      .card-jq {
+        bottom: 10%;
+        left: 25%;
+      }
+
+      .card-bs {
+        top: 5%;
+        right: 25%;
+      }
+
+      .card-sass {
+        top: 30%;
+        right: 5%;
+      }
+
+      .card-vue {
+        bottom: 10%;
+        right: 25%;
+      }
+
+      /* 線 */
+      hr {
+        margin: 0;
+        position: absolute;
+      }
+
+      .line-html {
+        width: 30%;
+        top: 37%;
+        left: 13%;
+        transform: rotate(10deg);
+      }
+
+      .line-css {
+        width: 12%;
+        top: 30%;
+        left: 32%;
+        transform: rotate(30deg);
+      }
+
+      .line-js {
+        width: 25%;
+        top: 52%;
+        left: 18%;
+        transform: rotate(-10deg);
+      }
+
+      .line-jq {
+        width: 12%;
+        top: 58%;
+        left: 33%;
+        transform: rotate(-30deg);
+      }
+
+      .line-bs {
+        width: 10%;
+        top: 30%;
+        right: 34%;
+        transform: rotate(-30deg);
+      }
+
+      .line-sass {
+        width: 28%;
+        top: 37%;
+        right: 15%;
+        transform: rotate(-8deg);
+      }
+
+      .line-vue {
+        width: 12%;
+        top: 58%;
+        right: 33%;
+        transform: rotate(30deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card-main">
+    <img src="./images/wda.png">
+    <h1>泰山職訓局</h1>
+    <h2>從零開始的網頁設計課程</h2>
+    <h3>轉職網頁開發人員&nbsp;&nbsp;&nbsp;&nbsp;掌握就業必備職能</h3>
+    <h3>由淺入深學習技術&nbsp;&nbsp;&nbsp;&nbsp;強化職場的競爭力</h3>
+  </div>
+
+  <hr class="line-html">
+
+  <div class="card card-html">
+    <img src="./images/html.png">
+    <h2>HTML</h2>
+    <p>
+      超文本標記語言(英語:HyperText Markup Language，簡稱:HTML)是一種用於建立網頁的標準標記語言。 HTML 是一種基礎技術，常與 CSS、JavaScript
+      一起被眾多網站用於設計賞心悅目的網頁、網頁應用程式以及行 動應用程式的使用者介面。網頁瀏覽器可以讀取 HTML 檔案，並將其彩現成視覺化網頁。HTML 描述了一個網站 的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+    </p>
+  </div>
+
+  <hr class="line-css">
+
+  <div class="card card-css">
+    <img src="./images/css.png">
+    <h2>CSS3</h2>
+    <p>
+      層疊樣式表(英語:Cascading Style Sheets，簡寫CSS)，又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣 式表，一種用來為結構化文件(如 HTML 文件或 XML
+      應用)添加樣式(字型、間距和顏色等)的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下 一版的 CSS4 仍在開發中。 </p>
+  </div>
+
+  <hr class="line-js">
+
+  <div class="card card-js">
+    <img src="./images/js.png">
+    <h2>JavaScript</h2>
+    <p>
+      JavaScript，通常縮寫為 JS，是一種進階直譯語言的程式語言。JavaScript 是一門基於原型、函式先行的語言，是
+      一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函式語言程式設計。
+  </div>
+
+  <hr class="line-jq">
+
+  <div class="card card-jq">
+    <img src="./images/jq.png">
+    <h2>jQuery</h2>
+    <p>
+      jQuery 是一套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript 之間的操作。全球前 10,000 個存取最高的
+      網站中，有 65% 使用了jQuery，是目前最受歡迎的 JavaScript 函式庫。
+  </div>
+
+  <hr class="line-bs">
+
+  <div class="card card-bs">
+    <img src="./images/bs.png">
+    <h2>Bootstrap</h2>
+    <p>
+      Bootstrap 是一組用於網站和網路應用程式開發的開源前端(所謂「前端」，指的是展現給終端使用者的介面。與 之對應的「後端」是在伺服器上面執行的程式碼)框架，包括 HTML、CSS及JavaScript
+      的框架，提供字體排印、 表單、按鈕、導航及其他各種元件及 Javascript 擴充套件，旨在使動態網頁和 Web 應用的開發更加容易。
+  </div>
+
+  <hr class="line-sass">
+
+  <div class="card card-sass">
+    <img src="./images/sass.png">
+    <h2>Sass</h2>
+    <p>
+      Sass是一個將指令碼解析成CSS的手稿語言，即SassScript。Sass包括兩套語法。最開始的語法叫做「縮排語法」，與Haml類似[5]，使用縮排來區分代碼塊，並且用換行將不同規則分隔開。而較新的語法叫做「SCSS」，使用和CSS一樣的塊語法，即使用大括號將不同的規則分開，使用分號將具體的樣式分開。通常情況下，這兩套語法通過.sass和.scss兩個副檔名區分開。
+  </div>
+
+  <hr class="line-vue">
+
+  <div class="card card-vue">
+    <img src="./images/vue.png">
+    <h2>Vue.js</h2>
+    <p>
+      Vue.js是一款JavaScript前端框架，旨在更好地組織與簡化Web開發。Vue所關注的核心是MVC模式中的視圖層，同時，它也能方便地取得資料更新，並通過組件內部特定的方法實現視圖與模型的互動。
+  </div>
+
+</body>
+
+</html>
